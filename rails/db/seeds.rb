@@ -5,3 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Item.create(mc_id: 1, dmg: 0, qty: 100, name: 'Stone', raw_name: 'item.Stone', max_dmg: 0)
