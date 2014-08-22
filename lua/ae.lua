@@ -9,6 +9,7 @@ function items_to_json_http(items, status)
   for i, item in ipairs(items) do
     response = response .. 
     '{' ..
+    ' "id": "' .. item.id .. ':' .. item.dmg .. '",' ..
     ' "mc_id": ' .. item.id .. ',' ..
     ' "dmg": ' .. item.dmg .. ',' ..
     ' "qty": ' .. item.qty .. ',' ..
