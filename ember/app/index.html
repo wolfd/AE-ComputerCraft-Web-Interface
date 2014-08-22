@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Craftmanager</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/craftmanager.css">
+  </head>
+  <body>
+    <script>
+      window.CraftmanagerENV = {{ENV}};
+      window.EmberENV = window.CraftmanagerENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/craftmanager.js"></script>
+    <script>
+      window.Craftmanager = require('craftmanager/app')['default'].create(CraftmanagerENV.APP);
+    </script>
+  </body>
+</html>
